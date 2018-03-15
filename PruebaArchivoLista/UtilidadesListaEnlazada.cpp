@@ -94,15 +94,15 @@ void UtilidadesListaEnlazada::guardarLista(Nodo *& head, char *nombre)
 void UtilidadesListaEnlazada::printList(Nodo *& head)
 {
 	nodo tmp = head;
-	while (tmp != 0) {
-		if (tmp->sig != 0)
-			cout << "Sig: " << tmp->sig->valor;
-		else
-			cout << "Sig: NULL";
+	while (tmp->sig != 0) {
 		if (tmp->ant != 0)
-			cout << " Ant: " << tmp->ant->valor << endl;
+			cout << "Ant: " << tmp->ant->valor;
 		else
-			cout << " Ant: NULL" << endl;
+			cout << "Ant: NULL";
+		if (tmp->sig != 0)
+			cout << " Sig: " << tmp->sig->valor << endl;
+		else
+			cout << " Sig: NULL" << endl;
 		tmp = tmp->sig;
 	}
 

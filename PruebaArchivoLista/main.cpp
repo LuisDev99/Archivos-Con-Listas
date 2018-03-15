@@ -38,12 +38,12 @@ int main() {
 
 
 	char * nombre = new char;
-	cout << "Nombre con la extension! : ";
+	cout << "Nombre con la extension del archivo: ";
 	cin >> nombre;
 
 	UtilidadesListaEnlazada::guardarLista(nodeAE, nombre);
 
-	cout << "Presione cualquier tecla para continuar";
+	cout << "Presione cualquier tecla para continuar menos ENTER porque puede crashear (EN mi visual studio lo hace pero en otros no)";
 	_getch();
 
 }
